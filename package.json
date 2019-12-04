@@ -1,0 +1,15 @@
+{
+    "scripts": {
+        "copy-to-dist": "npx copyfiles -e \"./node_modules/**\" -e \"./package.json\" -e \"./package-lock.json\" -e \"./dist/**\" \"./**\" \"./dist\"",
+        "minify-css": "npx uglifycss --output dist/css/site.css dist/css/site.css",
+        "minify-js": "npx uglify-js dist/js/site.js --compress --mangle --output dist/js/site.js",
+        "build": "npm run copy-to-dist && npm run minify-css && npm run minify-js"
+        
+    },
+    "dependencies": {
+        "copyfiles": "^2.1.1",
+        "npx": "^10.2.0",
+        "uglify-js": "^3.7.1",
+        "uglifycss": "0.0.29"
+    }
+}

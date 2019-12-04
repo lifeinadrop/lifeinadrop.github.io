@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    width: 100%;    
+}
+header h1 {
+    text-align: center;
+}
+header p {
+    text-align: center;
+    margin-top: -20px;
+}
+#inputBox {
+    height: 80%;
+    width: 49%;
+    background-color: lightgray;
+    float: left;
+}
+#outputBox {
+    height: 80%;
+    width: 49%;
+    background-color: lightgray;
+    float: left;
+    margin-left: 20px;
+}
+#textBoxes{
+    text-align: center;
+}
+button {
+    height: 35px;
+    width: 250px;
+    text-align: center;
+}
+button:hover {
+    background-color: black;
+    color: white;
+}
+#clearAllText:hover{
+    background-color: red;
+}
+#testCode:hover {
+    background-color: green;
+}
+#tutorial {text-align: center;}
+footer {text-align: center;}
