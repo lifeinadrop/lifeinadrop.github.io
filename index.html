@@ -6,24 +6,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>HTML SandCastle</title>
+        <title>JS SandCastle</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/site.css">
+        <script src="js/site.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header>
-            <h1>Code SandCastle</h1>
+            <h1>JS SandCastle</h1>
             <p>Write HTML code and wash it away!</p>
-            <button>Write from Scratch</button><button>HTML Boilerplate</button><button id='clearAllText'>Clear all text</button>
-        </header>
-        <textarea id='inputBox' placeholder="Write your code here"></textarea>
-        <textarea id='outputBox' placeholder="Watch for your output here"></textarea>
-        <button id='testCode'>Test Your Code</button><button>Save Your Code</button><button>Share Your Code</button>
-        
+        </header>        
+        <textarea id='inputBox' name='inputBox' tabindex="-1" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}" placeholder="Write your code here"></textarea>
+        <textarea id='outputBox' name='outputBox' tabindex="-1" placeholder="Watch for your code here."></textarea>
+        <div id='buttons'>
+        <button id='testCode' onclick='runCode()'>Test Your Code</button><button id='clearAllText' onclick='clearCode()'>Clear all text</button>
+        </div>
         <script src="" async defer></script>
 
         <footer>&copy; A, C, & S</footer>

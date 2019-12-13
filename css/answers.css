@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    background-image: url("../images/background.webp");
+    filter: grayscale(20%);
+    background-size: cover;
+}
+header {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+p{
+    margin-bottom: 50px;
+    font-size: 20px;
+}
+section {
+    margin-top: 200px;
+}
+a {
+    color: red;
+}
+footer {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
