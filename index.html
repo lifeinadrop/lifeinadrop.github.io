@@ -20,10 +20,11 @@
             <h1>JS SandCastle</h1>
             <p>Write HTML code and wash it away!</p>
         </header>        
-        <textarea id='inputBox' name='inputBox' tabindex="-1" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}" placeholder="Write your code here"></textarea>
-        <textarea id='outputBox' name='outputBox' tabindex="-1" placeholder="Watch for your code here."></textarea>
+        <textarea id='inputBox' spellcheck="false" name='inputBox' tabindex="-1" onkeydown="if(event.keyCode===9){var v=this.value,s=this.selectionStart,e=this.selectionEnd;this.value=v.substring(0, s)+'\t'+v.substring(e);this.selectionStart=this.selectionEnd=s+1;return false;}" placeholder="Write your code here"></textarea>
+        <textarea id='outputBox' spellcheck="false" name='outputBox' tabindex="-1" placeholder="Watch for your code here."></textarea>
         <div id='buttons'>
         <button id='testCode' onclick='runCode()'>Test Your Code</button><button id='clearAllText' onclick='clearCode()'>Clear all text</button>
+        <a href="help.html" id='gohelp'>Go to the help page</a>
         </div>
         <script src="" async defer></script>
 
